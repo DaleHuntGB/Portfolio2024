@@ -18,6 +18,10 @@
 html {
     scrollbar-width: none;
     -ms-overflow-style: none;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-BG_L);
+    color: var(--clr-Text);
+    background-image: url("/Media/BG.png");
 }
 
 html::-webkit-scrollbar {
@@ -28,6 +32,7 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--clr-BG_L);
     color: var(--clr-Text);
+    background-image: url("/Media/BG.png");
 }
 
 #NoScroll {
