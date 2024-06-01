@@ -1,0 +1,147 @@
+:root {
+    --clr-BG: #1A1A1A;
+    --clr-BG_L: #2A2A2A;
+    --clr-Accent: #8080FF;
+    --clr-LightGrey: #2F2F2F;
+    --clr-Text: #FFFFFF;
+    --clr-Link: #80DED9;
+    --clr-Link_Hover: hsl(200, 75%, 90%);
+    --clr-ShadowBG: rgba(0, 0, 0, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-BG_L);
+    color: var(--clr-Text);
+}
+
+#NoScroll {
+    overflow: hidden;
+}
+
+#Scroll {
+    overflow: auto;
+}
+
+.Navigation_Bar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--clr-BG);
+    color: var(--clr-Text);
+    box-shadow: 0px 0px 15px 0px var(--clr-ShadowBG);
+    border: 1px solid black;
+    border-radius: 0.5em;
+    margin: 1em 1em 0.5em 1em;
+    position: sticky;
+    top: 1em;
+    > a {
+        text-decoration: none;
+        color: var(--clr-Link);
+        font-weight: 900;
+    }
+    > a:hover {
+        color: var(--clr-Link_Hover);
+    }
+}
+
+.Main_Content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0em 0.5em;
+    height: 100vh;
+    animation: FADE_IN 1s;
+    user-select: none;
+    > h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: var(--clr-Accent);
+        transition: color 0.5s ease-in-out;
+    }
+    > h1:hover {
+        animation: COLOR_CHANGE 2s infinite;
+    }
+    > p {
+        font-size: 1rem;
+        padding: 1em;
+        text-transform: none;
+        max-width: 75ch;
+        font-weight: 600;
+    }
+}
+
+.Portfolio_Main_Content
+{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0em 1em;
+    height: 100vh;
+    animation: FADE_IN 1s;
+    user-select: none;
+    > div {
+        background-color: var(--clr-BG);
+        margin: 0.5em 0em;
+        box-shadow: 0px 0px 15px 0px var(--clr-ShadowBG);
+        border-radius: 0.5em;
+        border: 1px solid black;
+        > h1 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            color: var(--clr-Accent);
+        }
+        > p {
+            display: none;
+            font-size: 1rem;
+            text-transform: none;
+            background-color: var(--clr-BG_L);
+            padding: 1em;
+            margin: 0.5em 0em 0em 0em;
+            border-radius: 0.5em;
+            border: 1px solid var(--clr-LightGrey);
+            font-weight: 600;
+        }
+    }
+}
+
+@keyframes FADE_IN {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes COLOR_CHANGE {
+    0% {
+        color: var(--clr-Accent);
+    }
+    50% {
+        color: var(--clr-Text);
+    }
+    100% {
+        color: var(--clr-Accent);
+    }
+}
