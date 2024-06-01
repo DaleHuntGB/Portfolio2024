@@ -117,12 +117,55 @@ body {
             text-transform: none;
             background-color: var(--clr-BG_L);
             padding: 1em;
-            margin: 0.5em 0em 0em 0em;
+            margin: 0.5em 0.5em 0em 0.5em;
             border-radius: 0.5em;
             border: 1px solid var(--clr-LightGrey);
             font-weight: 600;
         }
     }
+}
+
+#Proj1_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
+}
+#Proj2_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
+}
+#Proj3_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
+}
+#Proj4_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
+}
+#Proj5_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
+}
+#Proj6_Container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0em 0.5em;
 }
 
 @keyframes FADE_IN {

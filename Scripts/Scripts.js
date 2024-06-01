@@ -27,7 +27,7 @@ function ExpandDropdown(ID)
     else
     {
         ParagraphContainer.style.display = "block";
-        DivContainer.style.padding = "1em";
+        DivContainer.style.padding = "1em 0em 1em 0em";
         Arrow.style.transform = "rotate(180deg)";
     }
 }
